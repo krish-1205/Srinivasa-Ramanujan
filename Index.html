@@ -1,0 +1,109 @@
+<!-- Name: Krish Dumaswala
+         Student Number: 8958611 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive look at the life and impact of Srinivasa Ramanujan">
+    <meta name="keywords" content="Srinivasa Ramanujan, Mathematics, Number Theory, Indian Mathematician">
+    <title>Srinivasa Ramanujan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SRINIVASA RAMANUJAN</h1>
+    </header>
+
+    <div class="content-container">
+        <main>
+
+            <div class="biography-container">
+                <h2>BIOGRAPHY</h2>
+                <section id="biography">
+
+                    <blockquote cite="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan">
+                        <p>Srinivasa Ramanujan (22 December 1887 - 26 April 1920) was an Indian mathematician. Though he
+                            had almost no formal training in pure mathematics, he made substantial contributions to
+                            mathematical analysis, number theory, infinite series, and continued fractions, including
+                            solutions to
+                            mathematical problems then considered unsolvable.</p>
+                    </blockquote>
+                </section>
+
+                <section id="biographyimg">
+                    <figure>
+                        <img src="images/srinivasa__Ramanujan.jpg" alt="Srinivasa Ramanujan">
+                        <figcaption>Srinivasa Ramanujan</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div class="clearfix"></div>
+
+            <section id="biographyquote">
+                <h2>Quote</h2>
+                <q
+                    cite="https://timesofindia.indiatimes.com/education/news/national-mathematics-day-remembering-indian-genius-srinivasa-ramanujan-his-quotes/articleshow/72921959.cms">An
+                    equation for me has no meaning unless it expresses a thought of God.</q>
+            </section>
+
+            <section id="biographyvideo">
+                <h2>Video</h2>
+                <iframe width="750" height="510" src="https://www.youtube.com/embed/uGoUef1C3K0" frameborder="5"
+                    allowfullscreen></iframe>
+            </section>
+        </main>
+
+        <aside>
+            <section id="resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan" target="_blank"
+                            title="Wikipedia of Srinivasa Ramanujan">Wikipedia</a></li>
+                    <li><a href="https://www.britannica.com/biography/Srinivasa-Ramanujan" target="_blank"
+                            title="Britannica of Srinivasa Ramanujan">Britannica</a></li>
+                    <li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Ramanujan/" target="_blank"
+                            title="MacTutor of Srinivasa Ramanujan">MacTutor</a></li>
+                </ul>
+            </section>
+            <h2>Contact</h2>
+            <form action="formsubmission.php" method="post">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required
+                    placeholder="Enter your full name" autofocus><br>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required
+                    placeholder="Enter your email"><br>
+
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required placeholder="XXX-XXX-XXXX"><br>
+
+                <label for="contact-method" class="form-label">Preferred Method of Contact:</label>
+                <select id="contactMethod" name="contactMethod" class="form-control">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="none" selected>No preference</option>
+                </select><br>
+
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" required></textarea><br>
+
+                <label for="robot" class="form-label">
+                    I am not a robot <input type="checkbox" id="robot" name="robot" required>
+                </label>
+
+                <input type="submit" value="Submit" class="form-control">
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; Krish Dumaswala 2024.</p>
+    </footer>
+</body>
+
+</html>

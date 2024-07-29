@@ -1,0 +1,251 @@
+/* Krish Dumaswala - Student Number: 8958611 */
+
+html {
+    font: 20px/1.5 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+
+header {
+    text-align: center;
+
+    background: linear-gradient(to right, orange, white, green);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: black;
+    background: linear-gradient(to right, orange, white, green);
+    padding: 0.5rem;
+    clear: both;
+}
+
+
+.content-container {
+    overflow: hidden;
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 1rem;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 1rem;
+}
+
+
+.biography-container {
+    overflow: hidden;
+}
+
+.biography-container h2 {
+    text-align: center;
+}
+
+#biography {
+    float: left;
+    width: 70%;
+}
+
+#biographyimg {
+    float: right;
+    width: 30%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: center;
+}
+
+
+q {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: black;
+    border: 2px solid orange;
+    padding: 0.5rem;
+    display: block;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+figure {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+figure figcaption {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: black;
+    text-align: center;
+}
+
+
+iframe {
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+
+aside h2 {
+    font-variant: small-caps;
+    color: #333;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside ul li {
+    line-height: 1.8;
+    text-align: center;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: orange;
+}
+
+aside ul li a:hover {
+    color: #50b3a2;
+}
+
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 90%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #50b3a2;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+label[for="robot"] {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
+
+    .biography-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biographyquote {
+        width: 90%;
+    }
+
+    #biography,
+    #biographyimg {
+        float: none;
+        width: 100%;
+    }
+}
